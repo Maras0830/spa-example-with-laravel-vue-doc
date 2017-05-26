@@ -1,0 +1,11 @@
+{
+  "name": "SPA-Example-API-Document",
+  "version": "0.1.0",
+  "description": "SPA-Example API Document",
+  "title": "SPA-Example API Document",
+  "url" : "http://spa-example.dev/",
+  "header": {
+    "title": "大綱",
+    "filename": "header.md"
+  }
+}
