@@ -4,4 +4,4 @@
 
 ## Author: Maras Chen [GitHub](https://github.com/Maras0830)  
 
-### SPA-Example API URL: **[http://spa-laravel.dev/api/](http://spa-laravel.dev/api/)**
+### SPA-Example API URL: **[https://spa-laravel.codingweb.tw/api/](https://spa-laravel.codingweb.tw/api/)**

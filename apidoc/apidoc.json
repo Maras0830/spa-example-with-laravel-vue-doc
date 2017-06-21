@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "SPA-Example API Document",
   "title": "SPA-Example API Document",
-  "url" : "https://spa-laravel.codingweb.tw/",
+  "url" : "https://spa-laravel.codingweb.tw/api/",
   "header": {
     "title": "大綱",
     "filename": "header.md"
