@@ -3,9 +3,10 @@
 class UserAuth {
   /**
   * @api {post} login 登入
-  * @apiParam {String} email User Email
-  * @apiParam {String} password User Password
+  * @apiParam {String} title User Email
+  * @apiParam {String} content User Password
   * @apiGroup UserAuth
+  * @apiHeader {String} Authorization Bearer \<User access token\>
   * @apiSuccess (回傳) {string} token  user toekn
   * @apiSuccess (回傳) {timestamp} token_ttl token expired time
   * @apiSuccess (回傳) {object} user 用戶資料

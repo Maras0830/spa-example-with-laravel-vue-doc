@@ -1928,7 +1928,7 @@ class Posts {
           }
       }
   }
-  * @apiError UserNotFound 文章不存在
+  * @apiError NotFound 文章不存在
   {
     "message": "Post not found",
     "status_code": 404

@@ -4,8 +4,11 @@ class Posts {
 
   /**
   * @api {post} admin/posts 新增文章
+  * @apiParam {String} title User Email
+  * @apiParam {String} content User Password
   * @apiGroup AdminPosts
   * @apiSuccess (回傳) {object} posts 文章
+  * @apiHeader {String} Authorization Bearer \<Admin access token\>
   * @apiSuccessExample {json} Success-Response: 
   *    HTTP/1.1 200 OK
   {
@@ -38,8 +41,11 @@ class Posts {
 
   /**
   * @api {get} admin/posts/:post_id 更新文章
+  * @apiParam {String} title User Email
+  * @apiParam {String} content User Password
   * @apiGroup AdminPosts
   * @apiSuccess (回傳) {object} post 文章列表
+  * @apiHeader {String} Authorization Bearer \<Admin access token\>
   * @apiSuccessExample {json} Success-Response: 
   *    HTTP/1.1 200 OK
   {
@@ -525,4 +531,18 @@ class Posts {
   * @apiVersion 0.1.0
   */
   public function getPost() {} 
+
+  /**
+  * @api {delete} posts/:posts_id 刪除文章
+  * @apiGroup AdminPosts
+  * @apiHeader {String} Authorization Bearer \<Admin access token\>
+  * @apiSuccessExample {json} Success-Response: 
+  * HTTP/1.1 202 Accepted
+  * @apiError NotFound 文章不存在
+  {
+    "message": "Post not found",
+    "status_code": 404
+  }
+  **/
+  public function deleteComment()
 }
