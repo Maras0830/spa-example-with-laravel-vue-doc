@@ -37,9 +37,7 @@ class UserAuth {
   *        "id": 1,
   *        "name": "Miss Eleanora Hermann MD",
   *        "email": "maraschen@codingweb.tw"
-  *      },
-  *      "status_code": 200,
-  *      "message": "successful."
+  *      }
   *    }
   **/
   public function getMe()

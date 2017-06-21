@@ -38,15 +38,13 @@ class AdminAuth {
   * @apiSuccess (回傳) {string} message 狀態訊息
   * @apiSuccessExample {json} Success-Response: 
   *    HTTP/1.1 200 OK
-  *    {
-  *      "data": {
-  *        "id": 1,
-  *        "name": "Bryana Beer 2123",
-  *        "email": "maraschen@codingweb.tw"
-  *      },
-  *      "status_code": 200,
-  *      "message": "successful."
-  *    }
+  {
+      "data": {
+          "id": 1,
+          "name": "Bryana Beer 2123",
+          "email": "maraschen@codingweb.tw"
+      }
+  }
   *
   * @apiErrorExample json Error-Response:
   *    HTTP/1.1 401 unauthorizated （Token 過期）
