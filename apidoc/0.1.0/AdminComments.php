@@ -1,12 +1,12 @@
 <?php
 
-class UserComments {
+class AdminComments {
   /**
-  * @api {post} posts/:posts_id/comments 新增留言
+  * @api {post} admin/posts/:posts_id/comments 新增留言
   * @apiParam {String} title 標題
   * @apiParam {String} content 內容
-  * @apiGroup UserComments
-  * @apiHeader {String} Authorization Bearer \<User access token\>
+  * @apiGroup AdminComments
+  * @apiHeader {String} Authorization Bearer \<Admin access token\>
   * @apiSuccess (回傳) {object} data comment
   * @apiSuccessExample {json} Success-Response: 
   *    HTTP/1.1 200 OK
@@ -21,7 +21,7 @@ class UserComments {
                   "id": 1,
                   "name": "Miss Eleanora Hermann MD",
                   "email": "maraschen@codingweb.tw",
-                  "type": "User"
+                  "type": "Admin"
               }
           },
           "sub_comments": {
@@ -38,11 +38,11 @@ class UserComments {
   public function postComment()
 
     /**
-  * @api {post} posts/:posts_id/comments/:comments_id 新增子留言
+  * @api {post} admin/posts/:posts_id/comments/:comments_id 新增子留言
   * @apiParam {String} title 標題
   * @apiParam {String} content 內容
-  * @apiGroup UserComments
-  * @apiHeader {String} Authorization Bearer \<User access token\>
+  * @apiGroup AdminComments
+  * @apiHeader {String} Authorization Bearer \<Admin access token\>
   * @apiSuccess (回傳) {object} data comment
   * @apiSuccessExample {json} Success-Response: 
   *    HTTP/1.1 200 OK
@@ -57,7 +57,7 @@ class UserComments {
                   "id": 1,
                   "name": "Miss Eleanora Hermann MD",
                   "email": "maraschen@codingweb.tw",
-                  "type": "User"
+                  "type": "Admin"
               }
           },
           "sub_comments": {
@@ -79,11 +79,11 @@ class UserComments {
   public function postSubComment()
 
   /**
-  * @api {put} posts/:posts_id/comments/:comments_id 更新留言
+  * @api {put} admin/posts/:posts_id/comments/:comments_id 更新留言
   * @apiParam {String} title 標題
   * @apiParam {String} content 內容
-  * @apiGroup UserComments
-  * @apiHeader {String} Authorization Bearer \<User access token\>
+  * @apiGroup AdminComments
+  * @apiHeader {String} Authorization Bearer \<Admin access token\>
   * @apiSuccess (回傳) {object} data comment
   * @apiSuccessExample {json} Success-Response: 
   *    HTTP/1.1 200 OK
@@ -98,7 +98,7 @@ class UserComments {
                   "id": 1,
                   "name": "Miss Eleanora Hermann MD",
                   "email": "maraschen@codingweb.tw",
-                  "type": "User"
+                  "type": "Admin"
               }
           },
           "sub_comments": {
@@ -113,7 +113,7 @@ class UserComments {
                               "id": 12,
                               "name": "Adrian Ullrich",
                               "email": "sasha94@example.org",
-                              "type": "User"
+                              "type": "Admin"
                           }
                       },
                       "sub_comments": {
@@ -130,7 +130,7 @@ class UserComments {
                               "id": 12,
                               "name": "Adrian Ullrich",
                               "email": "sasha94@example.org",
-                              "type": "User"
+                              "type": "Admin"
                           }
                       },
                       "sub_comments": {
@@ -155,9 +155,9 @@ class UserComments {
   public function putComment()
 
   /**
-  * @api {delete} posts/:posts_id/comments/:comments_id 刪除留言
-  * @apiGroup UserComments
-  * @apiHeader {String} Authorization Bearer \<User access token\>
+  * @api {delete} admin/posts/:posts_id/comments/:comments_id 刪除留言
+  * @apiGroup AdminComments
+  * @apiHeader {String} Authorization Bearer \<Admin access token\>
   * @apiSuccessExample {json} Success-Response: 
   * HTTP/1.1 202 Accepted
   * @apiError NotFound 文章不存在
